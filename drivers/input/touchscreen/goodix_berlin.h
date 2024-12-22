@@ -12,6 +12,15 @@
 
 #include <linux/pm.h>
 
+enum goodix_berlin_ic_type {
+	IC_TYPE_BERLIN_A,
+	IC_TYPE_BERLIN_D,
+};
+
+struct goodix_berlin_ic_data {
+	enum goodix_berlin_ic_type ic_type;
+};
+
 struct device;
 struct input_id;
 struct regmap;

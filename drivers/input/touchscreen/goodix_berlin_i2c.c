@@ -53,8 +53,12 @@ static const struct i2c_device_id goodix_berlin_i2c_id[] = {
 
 MODULE_DEVICE_TABLE(i2c, goodix_berlin_i2c_id);
 
+static const struct goodix_berlin_ic_data gt9916_data = {
+	.ic_type = IC_TYPE_BERLIN_D,
+};
+
 static const struct of_device_id goodix_berlin_i2c_of_match[] = {
-	{ .compatible = "goodix,gt9916", },
+	{ .compatible = "goodix,gt9916", .data = &gt9916_data },
 	{ }
 };
 MODULE_DEVICE_TABLE(of, goodix_berlin_i2c_of_match);

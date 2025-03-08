@@ -1384,7 +1384,7 @@
 
 &sound {
 	compatible = "qcom,sm7325-sndcard",
-		     "qcom,qcm6490-idp-sndcard";
+		     "qcom,sm8250-sndcard";
 
 	model = "NP1";
 

@@ -1,0 +1,38 @@
+name: build
+on:
+  push:
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ARCH: arm64
+      PMB_CHROOT_METHOD: proot
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: |
+          sudo apt update -y
+          sudo apt install -y python3 make kpartx flex bison gcc gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu
+      - name: git clone
+        run: |
+          git clone https://gitlab.postmarketos.org/postmarketOS/pmbootstrap /tmp/pmbootstrap --depth 1
+          git clone https://gitlab.postmarketos.org/postmarketOS/pmaports.git /tmp/pmaports --depth 1
+          git clone https://github.com/mainlining/linux --branch danila/spacewar-testing /tmp/linux --depth 1
+      - name: pmaports
+        run: |
+          cd /tmp/pmaports
+          git config --global user.email gmankab@gmail.com
+          git config --global user.name gmanka
+          git remote add mainlining https://github.com/mainlining/pmaports
+          git fetch mainlining danila/spacewar-mr
+          git cherry-pick bc4c5a94adf4f515e4bb6c51e55a76b5d86cfe7b
+      - name: pmbootstrap
+        run: |
+          cp $GITHUB_WORKSPACE/pmbootstrap_v3.cfg ~/.config/pmbootstrap_v3.cfg
+          yes '' | python3 /tmp/pmbootstrap/pmbootstrap.py init
+      - name: build linux
+        run: |
+          cd /tmp/linux
+          python3 /tmp/pmbootstrap/pmbootstrap.py build linux-postmarketos-qcom-sc7280 --force
+

@@ -460,6 +460,26 @@
 	};
 };
 
+&spi17 {
+	status = "okay";
+	pinctrl-0 = <&qup_spi17_default>;
+
+	touchscreen@0 {
+		compatible = "novatek,nt36672-spi";
+		reg = <0>;
+
+		spi-max-frequency = <10000000>;  // 10M
+
+		novatek,reset-gpio = <&tlmm 12 GPIO_ACTIVE_LOW>;
+		novatek,irq-gpio = <&tlmm 122 0x2001>;
+		
+		novatek,swrst-n8-addr = <0x3f0fe>;
+		novatek,spi-rd-fast-addr = <0x3f310>;
+
+		novatek,fw-name = "j20s_novatek_ts_fw01.bin";
+	};
+};
+
 &mdss_dsi0 {
 	vdda-supply = <&vdda_mipi_dsi0_1p2>;
 	status = "okay";

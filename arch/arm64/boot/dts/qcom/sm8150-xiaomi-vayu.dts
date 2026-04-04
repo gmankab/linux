@@ -615,7 +615,6 @@
 &pm8150l_wled {
 	qcom,cabc;
 	qcom,cabc-sel = <1>;
-	qcom,current-boost-limit = <875>;
 	qcom,current-limit-microamp = <22500>;
 	qcom,ovp-millivolt = <28000>;
 	qcom,num-strings = <3>;

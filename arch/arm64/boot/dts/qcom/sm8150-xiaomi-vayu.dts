@@ -47,7 +47,10 @@
 	chassis-type = "handset";
 
 	aliases {
+		bluetooth0 = &bluetooth;
 		serial0 = &uart2;
+		hsuart0 = &uart13;
+		wifi0 = &wifi;
 	};
 
 	battery: battery {
@@ -880,7 +883,8 @@
 		vddrf-supply = <&vreg_l2c_1p3>;
 		vddch0-supply = <&vreg_l11c_3p3>;
 		max-speed = <3200000>;
-		firmware-name = "vayu/crnv21.bin";
+		firmware-name = "crnv21.bin", "crbtfw21.tlv";
+		local-bd-address = [ cc eb 5e 09 10 2c ];
 	};
 };
 

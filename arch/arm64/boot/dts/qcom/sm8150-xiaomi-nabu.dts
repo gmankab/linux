@@ -461,7 +461,7 @@
 
 	zap-shader {
 		memory-region = <&gpu_mem>;
-		firmware-name = "qcom/sm8150/xiaomi/nabu/a640_zap.mbn";
+		firmware-name = "qcom/sm8150/Xiaomi/nabu/a640_zap.mbn";
 	};
 };
 
@@ -773,17 +773,17 @@
 
 &remoteproc_adsp {
 	status = "okay";
-	firmware-name = "qcom/sm8150/xiaomi/nabu/adsp.mbn";
+	firmware-name = "qcom/sm8150/Xiaomi/nabu/adsp.mbn";
 };
 
 &remoteproc_cdsp {
 	status = "okay";
-	firmware-name = "qcom/sm8150/xiaomi/nabu/cdsp.mbn";
+	firmware-name = "qcom/sm8150/Xiaomi/nabu/cdsp.mbn";
 };
 
 &remoteproc_mpss {
 	status = "okay";
-	firmware-name = "qcom/sm8150/xiaomi/nabu/modem.mbn";
+	firmware-name = "qcom/sm8150/Xiaomi/nabu/modem.mbn";
 };
 
 &sound {

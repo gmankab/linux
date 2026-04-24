@@ -11,8 +11,6 @@
 
 #include <dt-bindings/arm/qcom,ids.h>
 #include <dt-bindings/gpio/gpio.h>
-#include <dt-bindings/input/input.h>
-#include <dt-bindings/input/gpio-keys.h>
 #include <dt-bindings/leds/common.h>
 #include <dt-bindings/pinctrl/qcom,pmic-gpio.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator.h>
@@ -459,7 +457,7 @@
 
 	zap-shader {
 		memory-region = <&gpu_mem>;
-		firmware-name = "qcom/a640_zap.mbn";
+		firmware-name = "qcom/sm8150/xiaomi/vayu/a640_zap.mbn";
 	};
 };
 
@@ -479,7 +477,7 @@
 		novatek,swrst-n8-addr = <0x3f0fe>;
 		novatek,spi-rd-fast-addr = <0x3f310>;
 
-		novatek,fw-name = "j20s_novatek_ts_fw01.bin";
+		novatek,fw-name = "novatek/j20s_novatek_ts_fw01.bin";
 	};
 };
 
@@ -661,23 +659,23 @@
 
 &remoteproc_adsp {
 	status = "okay";
-	firmware-name = "qcom/sm8150/vayu/adsp.mbn";
+	firmware-name = "qcom/sm8150/xiaomi/vayu/adsp.mbn";
 };
 
 &remoteproc_cdsp {
 	status = "okay";
-	firmware-name = "qcom/sm8150/vayu/cdsp.mbn";
+	firmware-name = "qcom/sm8150/xiaomi/vayu/cdsp.mbn";
 };
 
 &remoteproc_mpss {
 	status = "okay";
-	firmware-name = "qcom/sm8150/vayu/modem.mbn";
+	firmware-name = "qcom/sm8150/xiaomi/vayu/modem.mbn";
 };
 
 &tlmm {
 	/* gpios 0..3 are NFC spi, gpios 126..129 are FP spi */
 	gpio-reserved-ranges = <0 4>, <126 4>;
-	
+
 	sde_dsi_active: sde_dsi_active {
 		pins = "gpio6", "gpio7";
 		function = "gpio";

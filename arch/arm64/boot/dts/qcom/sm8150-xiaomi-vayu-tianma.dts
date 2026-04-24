@@ -1,0 +1,27 @@
+// SPDX-License-Identifier: GPL-2.0
+/*
+ * Device Tree Source for Xiaomi POCO X3 Pro (vayu)
+ *
+ * Copyright (c) 2022, Degdag Mohamed <degdagmohamed@gmail.com>
+ * Copyright (c) 2023, Arseniy Velikanov <adomerlee@gmail.com>
+ * Copyright (c) 2026, Ali Nasrullayev <nesrullayev.ali@gmail.com>
+ */
+
+/dts-v1/;
+
+#include "sm8150-xiaomi-vayu-common.dtsi"
+
+/ {
+	model = "Xiaomi POCO X3 Pro";
+	compatible = "xiaomi,vayu", "qcom,sm8150";
+	
+};
+
+&display_panel {
+	compatible = "tianma,nt36672";
+	status = "okay";
+};
+
+&touchscreen {
+	novatek,fw-name = "novatek/j20s_novatek_ts_fw01.bin";
+};

@@ -38,8 +38,6 @@
 /delete-node/ &cdsp_mem;    /* same size, shifted higher */
 
 / {
-	model = "Xiaomi POCO X3 Pro";
-	compatible = "xiaomi,vayu", "qcom,sm8150";
 	qcom,msm-id = <QCOM_ID_SM8150 0x20000>; /* SM8150 v2 */
 	qcom,board-id = <47 0>;
 	chassis-type = "handset";
@@ -476,8 +474,6 @@
 		
 		novatek,swrst-n8-addr = <0x3f0fe>;
 		novatek,spi-rd-fast-addr = <0x3f310>;
-
-		novatek,fw-name = "novatek/j20s_novatek_ts_fw01.bin";
 	};
 };
 
@@ -487,9 +483,6 @@
 	
 	display_panel:	panel@0 {
 		reg = <0>;
-
-		compatible = "tianma,nt36672";
-		status = "okay";
 		
 		backlight = <&pm8150l_wled>;
 		reset-gpios = <&tlmm 6 GPIO_ACTIVE_LOW>;

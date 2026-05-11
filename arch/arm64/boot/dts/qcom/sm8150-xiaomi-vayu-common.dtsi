@@ -14,13 +14,15 @@
 #include <dt-bindings/leds/common.h>
 #include <dt-bindings/pinctrl/qcom,pmic-gpio.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator.h>
+#include <dt-bindings/sound/qcom,q6asm.h>
 #include <dt-bindings/usb/pd.h>
 #include "sm8150.dtsi"
+#include "sm8150-wcd9340.dtsi"
 #include "pm8150.dtsi"
 #include "pm8150b.dtsi"
 #include "pm8150l.dtsi"
 
-/* 
+/*
  * Rewrite reserved memory maps inherited from sm8150.dtsi to match the ones
  * used on xiaomi-vayu.
  * Note: this list is ordered by its memory address in sm8150.dtsi.
@@ -136,7 +138,7 @@
 			reg = <0x0 0xa4c00000 0x0 0x3c00000>;
 			no-map;
 		};
-		
+
 		rmtfs_mem: memory@fe101000 {
 			compatible = "qcom,rmtfs-mem";
 			reg = <0 0xfe101000 0 0x300000>;
@@ -167,12 +169,12 @@
 
 		vin-supply = <&vph_pwr>;
 	};
-	
+
 	gpio_keys {
 		compatible = "gpio-keys";
 		pinctrl-names = "default";
 		pinctrl-0 = <&vol_up_pin_a>;
-		
+
 		vol_up {
 			label = "volume_up";
 			gpios = <&pm8150_gpios 6 GPIO_ACTIVE_LOW>;
@@ -491,7 +493,7 @@
 
 		novatek,reset-gpio = <&tlmm 12 GPIO_ACTIVE_LOW>;
 		novatek,irq-gpio = <&tlmm 122 0x2001>;
-		
+
 		novatek,swrst-n8-addr = <0x3f0fe>;
 		novatek,spi-rd-fast-addr = <0x3f310>;
 	};
@@ -500,14 +502,14 @@
 &mdss_dsi0 {
 	vdda-supply = <&vdda_mipi_dsi0_1p2>;
 	status = "okay";
-	
+
 	display_panel:	panel@0 {
 		reg = <0>;
-		
+
 		backlight = <&pm8150l_wled>;
 		reset-gpios = <&tlmm 6 GPIO_ACTIVE_LOW>;
 		// te-gpios = <&tlmm 8 GPIO_ACTIVE_HIGH>;
-		
+
 		pinctrl-names = "default", "sleep";
 		pinctrl-0 = <&sde_dsi_active &sde_te_active>;
 		pinctrl-1 = <&sde_dsi_suspend &sde_te_suspend>;
@@ -632,7 +634,7 @@
 	qcom,current-limit-microamp = <22500>;
 	qcom,ovp-millivolt = <28000>;
 	qcom,num-strings = <3>;
-	
+
 	status = "okay";
 };
 
@@ -685,9 +687,134 @@
 	firmware-name = "qcom/sm8150/xiaomi/vayu/modem.mbn";
 };
 
+&q6afedai {
+	dai@22 {
+		reg = <QUATERNARY_MI2S_RX>;
+		qcom,sd-lines = <0>;
+	};
+};
+
+&q6asmdai {
+	dai@0 {
+		reg = <MSM_FRONTEND_DAI_MULTIMEDIA1>;
+	};
+
+	dai@1 {
+		reg = <MSM_FRONTEND_DAI_MULTIMEDIA2>;
+	};
+};
+
+&sound {
+	compatible = "qcom,sm8150-sndcard";
+	pinctrl-0 = <&quat_mi2s_active &quat_mi2s_sd0_active &quat_mi2s_sd1_active>;
+	pinctrl-names = "default";
+	model = "Xiaomi POCO X3 Pro";
+
+	audio-routing =	"RX_BIAS", "MCLK",
+		"AMIC1", "MIC BIAS1",
+		"AMIC3", "MIC BIAS3",
+		"AMIC4", "MIC BIAS1";
+
+	mm1-dai-link {
+		link-name = "MultiMedia1";
+		cpu {
+			sound-dai = <&q6asmdai MSM_FRONTEND_DAI_MULTIMEDIA1>;
+		};
+	};
+
+	mm2-dai-link {
+		link-name = "MultiMedia2";
+		cpu {
+			sound-dai = <&q6asmdai MSM_FRONTEND_DAI_MULTIMEDIA2>;
+		};
+	};
+
+	speaker-dai-link {
+		link-name = "Primary Speaker Playback";
+		cpu {
+			sound-dai = <&q6afedai QUATERNARY_MI2S_RX>;
+		};
+
+		platform {
+			sound-dai = <&q6routing>;
+		};
+
+		codec {
+			sound-dai = <&tas2562 0>, <&tas2564 0>;
+		};
+	};
+
+	//Bottom & Top internal microphones
+	slimcap-dai-link {
+		link-name = "SLIM Capture 1";
+		cpu {
+			sound-dai = <&q6afedai SLIMBUS_0_TX>;
+		};
+
+		platform {
+			sound-dai = <&q6routing>;
+		};
+
+		codec {
+			sound-dai = <&wcd9340 1>; /* AIF1_CAP */
+		};
+	};
+};
+
+&i2c7 {
+	status = "okay";
+
+	tas2562: codec@4c { /* SPK */
+		compatible = "ti,tas2562";
+		reg = <0x4c>;
+		#sound-dai-cells = <1>;
+		interrupt-parent = <&tlmm>;
+		interrupts = <91 IRQ_TYPE_LEVEL_LOW>;
+		shutdown-gpios = <&tlmm 92 GPIO_ACTIVE_HIGH>;
+		ti,imon-slot-no = <0>;
+		ti,vmon-slot-no = <2>;
+		sound-name-prefix = "Right";
+	};
+
+	tas2564: codec@4d { /* EAR */
+		compatible = "ti,tas2564";
+		reg = <0x4d>;
+		#sound-dai-cells = <1>;
+		pinctrl-names = "default";
+		interrupt-parent = <&tlmm>;
+		interrupts = <90 IRQ_TYPE_LEVEL_LOW>;
+		shutdown-gpios = <&tlmm 89 GPIO_ACTIVE_HIGH>;
+		ti,imon-slot-no = <1>;
+		ti,vmon-slot-no = <3>;
+		sound-name-prefix = "Left";
+	};
+};
+
 &tlmm {
 	/* gpios 0..3 are NFC spi, gpios 126..129 are FP spi */
 	gpio-reserved-ranges = <0 4>, <126 4>;
+
+	quat_mi2s_active: quat-mi2s-active-state {
+		pins = "gpio137", "gpio138";
+		function = "qua_mi2s";
+		drive-strength = <8>;
+		bias-disable;
+		output-high;
+	};
+
+	quat_mi2s_sd0_active: quat-mi2s-sd0-active-state {
+		pins = "gpio139";
+		function = "qua_mi2s";
+		drive-strength = <8>;
+		bias-disable;
+	};
+
+	quat_mi2s_sd1_active: quat-mi2s-sd1-active-state {
+		pins = "gpio140";
+		function = "qua_mi2s";
+		drive-strength = <8>;
+		bias-disable;
+	};
 
 	sde_dsi_active: sde_dsi_active {
 		pins = "gpio6", "gpio7";
@@ -745,7 +872,7 @@
 		bias-pull-down;
 		output-low;
 	};
-			
+
 	ts_int_suspend: ts_int_suspend {
 		pins = "gpio122";
 		function = "gpio";
@@ -944,6 +1071,24 @@
 	vdda-pll-supply = <&vreg_l5a_0p875>;
 	vdda18-supply = <&vreg_l12a_1p8>;
 	vdda33-supply = <&vreg_l2a_3p1>;
+};
+
+&wcd9340 {
+	reset-gpios = <&tlmm 143 GPIO_ACTIVE_HIGH>;
+	vdd-buck-sido-supply = <&vreg_s4a_1p8>;
+	vdd-buck-supply = <&vreg_s4a_1p8>;
+	vdd-tx-supply = <&vreg_s4a_1p8>;
+	vdd-rx-supply = <&vreg_s4a_1p8>;
+	vdd-io-supply = <&vreg_s4a_1p8>;
+
+	qcom,micbias1-microvolt = <2700000>;
+	qcom,micbias2-microvolt = <2700000>;
+	qcom,micbias3-microvolt = <2700000>;
+	qcom,micbias4-microvolt = <2700000>;
+
+	qcom,mbhc-buttons-vthreshold-microvolt = <75000 150000 237000 500000 500000 500000 500000 500000>;
+	qcom,mbhc-headset-vthreshold-microvolt = <2600000>;
+	qcom,mbhc-headphone-vthreshold-microvolt = <50000>;
 };
 
 &wifi {

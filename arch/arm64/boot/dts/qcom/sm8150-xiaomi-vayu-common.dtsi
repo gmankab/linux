@@ -942,7 +942,14 @@
 		};
 	};
 
-	qup_uart13_sleep: qup-uart13-sleep {
+	qup_uart13_default: qup-uart13-default-state {
+		pins = "gpio43", "gpio44", "gpio45", "gpio46";
+		function = "qup13";
+		drive-strength = <2>;
+		bias-disable;
+	};
+
+	qup_uart13_sleep: qup-uart13-sleep-state {
 		pinmux {
 			pins = "gpio43", "gpio44", "gpio45", "gpio46";
 			function = "gpio";
@@ -1012,6 +1019,7 @@
 	                      <&tlmm 46 IRQ_TYPE_EDGE_FALLING>;
 
 	pinctrl-names = "default", "sleep";
+	pinctrl-0 = <&qup_uart13_default>;
 	pinctrl-1 = <&qup_uart13_sleep>;
 
 	bluetooth: bluetooth {
@@ -1022,7 +1030,6 @@
 		vddch0-supply = <&vreg_l11c_3p3>;
 		max-speed = <3200000>;
 		firmware-name = "crnv21.bin", "crbtfw21.tlv";
-		local-bd-address = [ cc eb 5e 09 10 2c ];
 	};
 };
 

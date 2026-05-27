@@ -53,8 +53,27 @@
 
 	battery: battery {
 		compatible = "simple-battery";
-		charge-full-design-microamp-hours = <5150000>;
+		charge-full-design-microamp-hours = <5160000>;
+		/*
+		 * Energy = 5160 mAh * 3.85 V (standard Li-ion nominal);
+		 * downstream profile does not state a nominal voltage.
+		 */
+		energy-full-design-microwatt-hours = <19866000>;
+		/*
+		 * Downstream advertises qcom,fastchg-current-ma = <5900>,
+		 * but that ceiling is gated by Xiaomi-specific battery
+		 * authentication, thermal throttling and charge-pump
+		 * sequencing not implemented in mainline. 2 A is well
+		 * within what PM8150B can deliver safely without that.
+		 */
+		constant-charge-current-max-microamp = <2000000>;
 		voltage-min-design-microvolt = <3400000>;
+		/*
+		 * Downstream qcom,max-voltage-uv = <4475000> (4.475 V).
+		 * Held at 4.4 V here to limit cell heating; the extra
+		 * 75 mV downstream is paired with thermal management
+		 * that mainline does not yet have.
+		 */
 		voltage-max-design-microvolt = <4400000>;
 	};
 

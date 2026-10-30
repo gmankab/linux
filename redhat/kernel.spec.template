@@ -2473,6 +2473,9 @@ BuildKernel() {
     %{make} ARCH=$Arch dtbs INSTALL_DTBS_PATH=$RPM_BUILD_ROOT/%{image_install_path}/dtb-$KernelVer
     %{make} ARCH=$Arch dtbs_install INSTALL_DTBS_PATH=$RPM_BUILD_ROOT/%{image_install_path}/dtb-$KernelVer
     cp -r $RPM_BUILD_ROOT/%{image_install_path}/dtb-$KernelVer $RPM_BUILD_ROOT/lib/modules/$KernelVer/dtb
+%ifarch aarch64
+    install -m 644 $RPM_BUILD_ROOT/lib/modules/$KernelVer/dtb/qcom/sm8150-xiaomi-nabu.dtb $RPM_BUILD_ROOT/lib/modules/$KernelVer/devicetree
+%endif
     find arch/$Arch/boot/dts -name '*.dtb' -type f -delete
 %endif
 
@@ -4717,6 +4720,9 @@ fi\
 %ifarch %{dtb_arches}\
 /lib/modules/%{KVERREL}%{?3:+%{3}}/dtb \
 %ghost /%{image_install_path}/dtb-%{KVERREL}%{?3:+%{3}} \
+%endif\
+%ifarch aarch64\
+/lib/modules/%{KVERREL}%{?3:+%{3}}/devicetree \
 %endif\
 /lib/modules/%{KVERREL}%{?3:+%{3}}/System.map\
 %ghost /boot/System.map-%{KVERREL}%{?3:+%{3}}\

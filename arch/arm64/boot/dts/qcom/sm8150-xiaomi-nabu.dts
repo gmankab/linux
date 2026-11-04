@@ -887,6 +887,13 @@
 		bias-disable;
 	};
 
+	qup_uart13_default: qup-uart13-default-state {
+		pins = "gpio43", "gpio44", "gpio45", "gpio46";
+		function = "qup13";
+		drive-strength = <2>;
+		bias-disable;
+	};
+
 	qup_uart13_sleep: qup-uart13-sleep {
 		pinmux {
 			pins = "gpio43", "gpio44",
@@ -1067,6 +1074,7 @@
 				<&tlmm 46 IRQ_TYPE_EDGE_FALLING>;
 
 	pinctrl-names = "default", "sleep";
+	pinctrl-0 = <&qup_uart13_default>;
 	pinctrl-1 = <&qup_uart13_sleep>;
 
 	bluetooth: bluetooth {

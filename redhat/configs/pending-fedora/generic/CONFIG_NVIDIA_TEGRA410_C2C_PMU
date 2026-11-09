@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: NVIDIA_TEGRA410_C2C_PMU [=n]
+# Type  : tristate
+# Defined at drivers/perf/Kconfig:321
+#   Prompt: NVIDIA Tegra410 C2C PMU
+#   Depends on: PERF_EVENTS [=y] && ARM64 [=y] && ACPI [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Performance monitor support
+#         -> NVIDIA Tegra410 C2C PMU (NVIDIA_TEGRA410_C2C_PMU [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 2f89b7f78c50 (perf: add NVIDIA Tegra410 C2C PMU)
+# CONFIG_NVIDIA_TEGRA410_C2C_PMU is not set

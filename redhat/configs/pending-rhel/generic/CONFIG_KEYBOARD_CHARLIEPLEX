@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: KEYBOARD_CHARLIEPLEX [=n]
+# Type  : tristate
+# Defined at drivers/input/keyboard/Kconfig:292
+#   Prompt: GPIO driven charlieplex keypad support
+#   Depends on: INPUT [=y] && INPUT_KEYBOARD [=y] && (GPIOLIB [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Input device support
+#         -> Generic input layer (needed for keyboard, mouse, ...) (INPUT [=y])
+#           -> Keyboards (INPUT_KEYBOARD [=y])
+#             -> GPIO driven charlieplex keypad support (KEYBOARD_CHARLIEPLEX [=n])
+# Selects: INPUT_MATRIXKMAP [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: 2ca45e57ea02 (Input: charlieplex_keypad - add GPIO charlieplex keypad)
+# CONFIG_KEYBOARD_CHARLIEPLEX is not set

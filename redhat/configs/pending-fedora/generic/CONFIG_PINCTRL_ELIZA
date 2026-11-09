@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: PINCTRL_ELIZA [=n]
+# Type  : tristate
+# Defined at drivers/pinctrl/qcom/Kconfig.msm:18
+#   Prompt: Qualcomm Technologies Inc Eliza pin controller driver
+#   Depends on: PINCTRL [=y] && (ARCH_QCOM [=y] || COMPILE_TEST [=n]) && PINCTRL_MSM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Pin controllers (PINCTRL [=y])
+#         -> Qualcomm core pin controller driver (PINCTRL_MSM [=y])
+#           -> Qualcomm Technologies Inc Eliza pin controller driver (PINCTRL_ELIZA [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 6f26989e15fb (pinctrl: qcom: Add Eliza pinctrl driver)
+# CONFIG_PINCTRL_ELIZA is not set

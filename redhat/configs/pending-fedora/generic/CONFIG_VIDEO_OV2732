@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: VIDEO_OV2732 [=n]
+# Type  : tristate
+# Defined at drivers/media/i2c/Kconfig:493
+#   Prompt: OmniVision OV2732 sensor support
+#   Depends on: MEDIA_SUPPORT [=m] && VIDEO_DEV [=m] && VIDEO_CAMERA_SENSOR [=y] && OF [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Multimedia support (MEDIA_SUPPORT [=m])
+#         -> Media ancillary drivers
+#           -> Camera sensor devices (VIDEO_CAMERA_SENSOR [=y])
+#             -> OmniVision OV2732 sensor support (VIDEO_OV2732 [=n])
+# Selects: MEDIA_CONTROLLER [=y] && V4L2_CCI_I2C [=m] && VIDEO_V4L2_SUBDEV_API [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 247b8b855876 (media: i2c: Add ov2732 image sensor driver)
+# CONFIG_VIDEO_OV2732 is not set

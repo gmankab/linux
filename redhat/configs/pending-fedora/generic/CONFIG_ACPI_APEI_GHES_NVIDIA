@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: ACPI_APEI_GHES_NVIDIA [=n]
+# Type  : tristate
+# Defined at drivers/acpi/apei/Kconfig:77
+#   Prompt: NVIDIA GHES vendor record handler
+#   Depends on: ACPI [=y] && ACPI_APEI_GHES [=y]
+#   Location:
+#     -> Power management and ACPI options
+#       -> ACPI (Advanced Configuration and Power Interface) Support (ACPI [=y])
+#         -> NVIDIA GHES vendor record handler (ACPI_APEI_GHES_NVIDIA [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: d7610855b0b5 (ACPI: APEI: GHES: Add NVIDIA vendor CPER record handler)
+# CONFIG_ACPI_APEI_GHES_NVIDIA is not set

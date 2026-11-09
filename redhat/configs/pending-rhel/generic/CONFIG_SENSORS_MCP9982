@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: SENSORS_MCP9982 [=n]
+# Type  : tristate
+# Defined at drivers/hwmon/Kconfig:1381
+#   Prompt: Microchip Technology MCP9982 driver
+#   Depends on: HWMON [=y] && I2C [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Hardware Monitoring support (HWMON [=y])
+#         -> Microchip Technology MCP9982 driver (SENSORS_MCP9982 [=n])
+# Selects: REGMAP_I2C [=m]
+# 
+# 
+# 
+# ~~~
+# Commit: e2fe950f34e5 (hwmon: add support for MCP998X)
+# CONFIG_SENSORS_MCP9982 is not set

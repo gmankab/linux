@@ -1,0 +1,20 @@
+# ~~~
+# Symbol: IOMMU_PT_X86_64 [=n]
+# Type  : tristate
+# Defined at drivers/iommu/generic_pt/Kconfig:65
+#   Prompt: IOMMU page table for x86 64-bit, 4/5 levels
+#   Depends on: GENERIC_PT [=y] && IOMMU_PT [=y] && !GENERIC_ATOMIC64 [=n]
+#   Location:
+#     -> Device Drivers
+#       -> Generic Radix Page Table (GENERIC_PT [=y])
+#         -> IOMMU Page Tables (IOMMU_PT [=y])
+#           -> IOMMU page table for x86 64-bit, 4/5 levels (IOMMU_PT_X86_64 [=n])
+# Selected by [n]:
+#   - AMD_IOMMU [=n] && IOMMU_SUPPORT [=y] && X86_64 && PCI [=y] && ACPI [=y] && HAVE_CMPXCHG_DOUBLE [=n]
+#   - INTEL_IOMMU [=n] && IOMMU_SUPPORT [=y] && PCI_MSI [=y] && ACPI [=y] && X86
+# 
+# 
+# 
+# ~~~
+# Commit: aef5de756ea8 (iommupt: Add the x86 64 bit page table format)
+# CONFIG_IOMMU_PT_X86_64 is not set

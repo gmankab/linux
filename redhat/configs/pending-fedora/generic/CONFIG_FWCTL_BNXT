@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: FWCTL_BNXT [=n]
+# Type  : tristate
+# Defined at drivers/fwctl/Kconfig:12
+#   Prompt: bnxt control fwctl driver
+#   Depends on: FWCTL [=m] && BNXT [=m]
+#   Location:
+#     -> Device Drivers
+#       -> fwctl device firmware access framework (FWCTL [=m])
+#         -> bnxt control fwctl driver (FWCTL_BNXT [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: e782efb830cd (fwctl/bnxt_fwctl: Add bnxt fwctl device)
+# CONFIG_FWCTL_BNXT is not set

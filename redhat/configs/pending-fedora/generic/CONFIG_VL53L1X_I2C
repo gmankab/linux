@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: VL53L1X_I2C [=n]
+# Type  : tristate
+# Defined at drivers/iio/proximity/Kconfig:247
+#   Prompt: STMicroelectronics VL53L1X ToF ranger sensor (I2C)
+#   Depends on: IIO [=m] && I2C [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Industrial I/O support (IIO [=m])
+#         -> Proximity and distance sensors
+#           -> STMicroelectronics VL53L1X ToF ranger sensor (I2C) (VL53L1X_I2C [=n])
+# Selects: IIO_BUFFER [=y] && IIO_TRIGGERED_BUFFER [=m] && REGMAP_I2C [=y] && RESET_CONTROLLER [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 128e5ebec856 (iio: proximity: add driver for ST VL53L1X ToF sensor)
+# CONFIG_VL53L1X_I2C is not set

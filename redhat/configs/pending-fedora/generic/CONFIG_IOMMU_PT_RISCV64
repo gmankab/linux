@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: IOMMU_PT_RISCV64 [=n]
+# Type  : tristate
+# Defined at drivers/iommu/generic_pt/Kconfig:55
+#   Prompt: IOMMU page table for RISC-V 64 bit Sv57/Sv48/Sv39
+#   Depends on: GENERIC_PT [=y] && IOMMU_PT [=y] && !GENERIC_ATOMIC64 [=n]
+#   Location:
+#     -> Device Drivers
+#       -> Generic Radix Page Table (GENERIC_PT [=y])
+#         -> IOMMU Page Tables (IOMMU_PT [=y])
+#           -> IOMMU page table for RISC-V 64 bit Sv57/Sv48/Sv39 (IOMMU_PT_RISCV64 [=n])
+# Selected by [n]:
+#   - RISCV_IOMMU [=n] && IOMMU_SUPPORT [=y] && GENERIC_MSI_IRQ [=y] && (RISCV || COMPILE_TEST [=n]) && 64BIT [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: e71e00127110 (iommupt: Add the RISC-V page table format)
+# CONFIG_IOMMU_PT_RISCV64 is not set

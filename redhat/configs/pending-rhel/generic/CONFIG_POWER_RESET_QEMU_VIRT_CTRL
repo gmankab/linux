@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: POWER_RESET_QEMU_VIRT_CTRL [=n]
+# Type  : tristate
+# Defined at drivers/power/reset/Kconfig:357
+#   Prompt: QEMU Virt Machine System Controller
+#   Depends on: POWER_RESET [=y] && HAS_IOMEM [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Board level reset or power off (POWER_RESET [=y])
+#         -> QEMU Virt Machine System Controller (POWER_RESET_QEMU_VIRT_CTRL [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: ad9d2cd065d1 (power: reset: Add QEMU virt-ctrl driver)
+# CONFIG_POWER_RESET_QEMU_VIRT_CTRL is not set

@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: DEBUG_KMEMLEAK_VERBOSE [=n]
+# Type  : bool
+# Defined at mm/Kconfig.debug:300
+#   Prompt: Default kmemleak to verbose mode
+#   Depends on: DEBUG_KMEMLEAK_AUTO_SCAN [=y]
+#   Location:
+#     -> Kernel hacking
+#       -> Memory Debugging
+#         -> Kernel memory leak detector (DEBUG_KMEMLEAK [=y])
+#           -> Enable kmemleak auto scan thread on boot up (DEBUG_KMEMLEAK_AUTO_SCAN [=y])
+#             -> Default kmemleak to verbose mode (DEBUG_KMEMLEAK_VERBOSE [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: e9d973ef18b0 (mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option)
+# CONFIG_DEBUG_KMEMLEAK_VERBOSE is not set

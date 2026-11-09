@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: PINCTRL_HAWI [=n]
+# Type  : tristate
+# Defined at drivers/pinctrl/qcom/Kconfig.msm:38
+#   Prompt: Qualcomm Technologies Inc Hawi pin controller driver
+#   Depends on: PINCTRL [=y] && (ARCH_QCOM [=y] || COMPILE_TEST [=n]) && PINCTRL_MSM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Pin controllers (PINCTRL [=y])
+#         -> Qualcomm core pin controller driver (PINCTRL_MSM [=y])
+#           -> Qualcomm Technologies Inc Hawi pin controller driver (PINCTRL_HAWI [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 90700e10d2ad (pinctrl: qcom: Add Hawi pinctrl driver)
+# CONFIG_PINCTRL_HAWI is not set

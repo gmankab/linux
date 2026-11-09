@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: DRM_PANEL_SAMSUNG_S6E8FC0 [=n]
+# Type  : tristate
+# Defined at drivers/gpu/drm/panel/Kconfig:969
+#   Prompt: Samsung S6E8FC0 DSI controller
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && DRM_PANEL [=y] && OF [=y] && BACKLIGHT_CLASS_DEVICE [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> Display Panels
+#             -> Samsung S6E8FC0 DSI controller (DRM_PANEL_SAMSUNG_S6E8FC0 [=n])
+# Selects: DRM_MIPI_DSI [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: 49837b6babe7 (drm: panel: Add Samsung S6E8FC0 DSI controller for M1906F9 panel)
+# CONFIG_DRM_PANEL_SAMSUNG_S6E8FC0 is not set

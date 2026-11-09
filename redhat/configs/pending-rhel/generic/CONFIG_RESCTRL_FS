@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: RESCTRL_FS [=n]
+# Type  : bool
+# Defined at fs/resctrl/Kconfig:1
+#   Prompt: CPU Resource Control Filesystem (resctrl)
+#   Depends on: MISC_FILESYSTEMS [=y] && ARCH_HAS_CPU_RESCTRL [=y]
+#   Location:
+#     -> File systems
+#       -> Miscellaneous filesystems (MISC_FILESYSTEMS [=y])
+#         -> CPU Resource Control Filesystem (resctrl) (RESCTRL_FS [=n])
+# Selects: KERNFS [=y] && PROC_CPU_RESCTRL [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: bff70402d6d6 (fs/resctrl: Add boiler plate for external resctrl code)
+# CONFIG_RESCTRL_FS is not set

@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: INTEL_MEI_CSC [=n]
+# Type  : tristate
+# Defined at drivers/misc/mei/Kconfig:62
+#   Prompt: Intel MEI CSC embedded device
+#   Depends on: INTEL_MEI [=m] && INTEL_MEI_ME [=m]
+#   Location:
+#     -> Device Drivers
+#       -> Misc devices
+#         -> Intel Management Engine Interface (INTEL_MEI [=m])
+#           -> Intel MEI CSC embedded device (INTEL_MEI_CSC [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 72fdf0bbd357 (mei: csc: support controller with separate PCI device)
+# CONFIG_INTEL_MEI_CSC is not set

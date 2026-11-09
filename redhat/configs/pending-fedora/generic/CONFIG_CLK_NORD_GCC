@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: CLK_NORD_GCC [=n]
+# Type  : tristate
+# Defined at drivers/clk/qcom/Kconfig:148
+#   Prompt: Nord Global Clock Controller
+#   Depends on: COMMON_CLK [=y] && COMMON_CLK_QCOM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Common Clock Framework (COMMON_CLK [=y])
+#         -> Support for Qualcomm's clock controllers (COMMON_CLK_QCOM [=y])
+#           -> Nord Global Clock Controller (CLK_NORD_GCC [=n])
+# Selects: QCOM_GDSC [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: a4f780cd5c7a (clk: qcom: gcc: Add multiple global clock controller driver for Nord SoC)
+# CONFIG_CLK_NORD_GCC is not set

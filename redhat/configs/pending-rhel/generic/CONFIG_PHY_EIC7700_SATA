@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: PHY_EIC7700_SATA [=n]
+# Type  : tristate
+# Defined at drivers/phy/eswin/Kconfig:5
+#   Prompt: eic7700 Sata SerDes/PHY driver
+#   Depends on: (ARCH_ESWIN [=y] || COMPILE_TEST [=n]) && HAS_IOMEM [=y]
+#   Location:
+#     -> Device Drivers
+#       -> PHY Subsystem
+#         -> eic7700 Sata SerDes/PHY driver (PHY_EIC7700_SATA [=n])
+# Selects: GENERIC_PHY [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 67ee9ccaa34a (phy: eswin: Create eswin directory and add EIC7700 SATA PHY driver)
+# CONFIG_PHY_EIC7700_SATA is not set

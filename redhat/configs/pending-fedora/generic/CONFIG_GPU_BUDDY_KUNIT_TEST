@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: GPU_BUDDY_KUNIT_TEST [=m]
+# Type  : tristate
+# Defined at drivers/gpu/Kconfig:8
+#   Prompt: KUnit tests for GPU buddy allocator
+#   Depends on: HAS_IOMEM [=y] && GPU_BUDDY [=y] && KUNIT [=m]
+#   Visible if: HAS_IOMEM [=y] && GPU_BUDDY [=y] && KUNIT [=m] && !KUNIT_ALL_TESTS [=m]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> KUnit tests for GPU buddy allocator (GPU_BUDDY_KUNIT_TEST [=m])
+# 
+# 
+# 
+# ~~~
+# Commit: ba110db8e1bc (gpu: Move DRM buddy allocator one level up (part two))
+CONFIG_GPU_BUDDY_KUNIT_TEST=m

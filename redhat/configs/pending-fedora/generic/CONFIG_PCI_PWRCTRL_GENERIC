@@ -1,0 +1,21 @@
+# ~~~
+# Symbol: PCI_PWRCTRL_GENERIC [=n]
+# Type  : tristate
+# Defined at drivers/pci/pwrctrl/Kconfig:14
+#   Prompt: Generic PCI Power Control driver for PCI slots and endpoints
+#   Depends on: PCI [=y]
+#   Location:
+#     -> Device Drivers
+#       -> PCI support (PCI [=y])
+#         -> Generic PCI Power Control driver for PCI slots and endpoints (PCI_PWRCTRL_GENERIC [=n])
+# Selects: POWER_SEQUENCING [=m] && PCI_PWRCTRL [=m]
+# Selected by [n]:
+#   - PCIE_MEDIATEK_GEN3 [=n] && PCI [=y] && (ARCH_AIROHA || ARCH_MEDIATEK || COMPILE_TEST [=n]) && PCI_MSI [=y]
+#   - PCIE_QCOM [=n] && PCI [=y] && OF [=n] && (ARCH_QCOM || COMPILE_TEST [=n]) && PCI_MSI [=y]
+#   - PCIE_SPACEMIT_K1 [=n] && PCI [=y] && (ARCH_SPACEMIT || COMPILE_TEST [=n]) && HAS_IOMEM [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: ff124bbbca1d (PCI/pwrctrl: generic: Rename pci-pwrctrl-slot as generic)
+# CONFIG_PCI_PWRCTRL_GENERIC is not set

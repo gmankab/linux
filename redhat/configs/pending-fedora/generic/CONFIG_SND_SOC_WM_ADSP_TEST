@@ -1,0 +1,21 @@
+# ~~~
+# Symbol: SND_SOC_WM_ADSP_TEST [=m]
+# Type  : tristate
+# Defined at sound/soc/codecs/Kconfig:405
+#   Prompt: KUnit tests for Cirrus Logic wm_adsp
+#   Depends on: SOUND [=m] && SND [=m] && SND_SOC [=m] && KUNIT [=m] && SND_SOC_WM_ADSP [=m]
+#   Visible if: SOUND [=m] && SND [=m] && SND_SOC [=m] && KUNIT [=m] && SND_SOC_WM_ADSP [=m] && !KUNIT_ALL_TESTS [=m]
+#   Location:
+#     -> Device Drivers
+#       -> Sound card support (SOUND [=m])
+#         -> Advanced Linux Sound Architecture (SND [=m])
+#           -> ALSA for SoC audio support (SND_SOC [=m])
+#             -> CODEC drivers
+#               -> Cirrus Logic wm_adsp driver (SND_SOC_WM_ADSP [=m])
+#                 -> KUnit tests for Cirrus Logic wm_adsp (SND_SOC_WM_ADSP_TEST [=m])
+# 
+# 
+# 
+# ~~~
+# Commit: bf2d44d07de7 (ASoC: wm_adsp: Add kunit test for firmware file search)
+CONFIG_SND_SOC_WM_ADSP_TEST=m

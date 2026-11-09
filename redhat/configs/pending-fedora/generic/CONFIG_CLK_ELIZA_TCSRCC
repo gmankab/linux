@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: CLK_ELIZA_TCSRCC [=n]
+# Type  : tristate
+# Defined at drivers/clk/qcom/Kconfig:40
+#   Prompt: Eliza TCSR Clock Controller
+#   Depends on: COMMON_CLK [=y] && COMMON_CLK_QCOM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Common Clock Framework (COMMON_CLK [=y])
+#         -> Support for Qualcomm's clock controllers (COMMON_CLK_QCOM [=y])
+#           -> Eliza TCSR Clock Controller (CLK_ELIZA_TCSRCC [=n])
+# Selects: QCOM_GDSC [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: c69a58634475 (clk: qcom: Add TCSR clock driver for Eliza)
+# CONFIG_CLK_ELIZA_TCSRCC is not set

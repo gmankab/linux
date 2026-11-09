@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: SENSORS_XDPE1A2G7B [=n]
+# Type  : tristate
+# Defined at drivers/hwmon/pmbus/Kconfig:732
+#   Prompt: Infineon XDPE1A2G7B
+#   Depends on: HWMON [=y] && PMBUS [=m]
+#   Location:
+#     -> Device Drivers
+#       -> Hardware Monitoring support (HWMON [=y])
+#         -> PMBus support (PMBUS [=m])
+#           -> Infineon XDPE1A2G7B (SENSORS_XDPE1A2G7B [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 34b66c7ed11c (hwmon:(pmbus/xdpe1a2g7b) Add support for xdpe1a2g5b/7b controllers)
+# CONFIG_SENSORS_XDPE1A2G7B is not set

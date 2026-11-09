@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: TRACE_REMOTE_TEST [=n]
+# Type  : tristate
+# Defined at kernel/trace/Kconfig:1290
+#   Prompt: Test module for remote tracing
+#   Depends on: FTRACE [=y]
+#   Location:
+#     -> Kernel hacking
+#       -> Tracers (FTRACE [=y])
+#         -> Test module for remote tracing (TRACE_REMOTE_TEST [=n])
+# Selects: TRACE_REMOTE [=n] && SIMPLE_RING_BUFFER [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: ea908a2b79c8 (tracing: Add a trace remote module for testing)
+# CONFIG_TRACE_REMOTE_TEST is not set

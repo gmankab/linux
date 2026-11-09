@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: STRING_KUNIT_BENCH [=n]
+# Type  : bool
+# Defined at lib/Kconfig.debug:2529
+#   Prompt: Benchmark string functions at runtime
+#   Depends on: RUNTIME_TESTING_MENU [=y] && STRING_KUNIT_TEST [=m]
+#   Location:
+#     -> Kernel hacking
+#       -> Kernel Testing and Coverage
+#         -> Runtime Testing (RUNTIME_TESTING_MENU [=y])
+#           -> Benchmark string functions at runtime (STRING_KUNIT_BENCH [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 0020240a4311 (lib/string_kunit: add performance benchmark for strlen())
+# CONFIG_STRING_KUNIT_BENCH is not set

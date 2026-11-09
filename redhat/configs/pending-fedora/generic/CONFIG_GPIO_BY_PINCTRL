@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: GPIO_BY_PINCTRL [=n]
+# Type  : tristate
+# Defined at drivers/gpio/Kconfig:245
+#   Prompt: GPIO support based on a pure pin control backend
+#   Depends on: HAS_IOMEM [=y] && GPIOLIB [=y]
+#   Location:
+#     -> Device Drivers
+#       -> GPIO Support (GPIOLIB [=y])
+#         -> Memory mapped GPIO drivers
+#           -> GPIO support based on a pure pin control backend (GPIO_BY_PINCTRL [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 7671f4949a6c (gpio: gpio-by-pinctrl: add pinctrl based generic GPIO driver)
+# CONFIG_GPIO_BY_PINCTRL is not set

@@ -1,0 +1,20 @@
+# ~~~
+# Symbol: CLK_ELIZA_GCC [=n]
+# Type  : tristate
+# Defined at drivers/clk/qcom/Kconfig:31
+#   Prompt: Eliza Global Clock Controller
+#   Depends on: COMMON_CLK [=y] && COMMON_CLK_QCOM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Common Clock Framework (COMMON_CLK [=y])
+#         -> Support for Qualcomm's clock controllers (COMMON_CLK_QCOM [=y])
+#           -> Eliza Global Clock Controller (CLK_ELIZA_GCC [=n])
+# Selects: QCOM_GDSC [=y]
+# Selected by [n]:
+#   - CLK_ELIZA_DISPCC [=n] && COMMON_CLK [=y] && COMMON_CLK_QCOM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 3d356ab4a1ec (clk: qcom: Add support for Global clock controller on Eliza)
+# CONFIG_CLK_ELIZA_GCC is not set

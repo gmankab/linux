@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: MDIO_PIC64HPSC [=n]
+# Type  : tristate
+# Defined at drivers/net/mdio/Kconfig:148
+#   Prompt: PIC64-HPSC/HX MDIO interface support
+#   Depends on: NETDEVICES [=y] && PHYLIB [=y] && HAS_IOMEM [=y] && OF_MDIO [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Network device support (NETDEVICES [=y])
+#         -> PIC64-HPSC/HX MDIO interface support (MDIO_PIC64HPSC [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: f76aef980206 (net: mdio: add a driver for PIC64-HPSC/HX MDIO controller)
+# CONFIG_MDIO_PIC64HPSC is not set

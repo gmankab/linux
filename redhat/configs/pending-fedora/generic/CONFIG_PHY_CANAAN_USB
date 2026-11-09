@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: PHY_CANAAN_USB [=n]
+# Type  : tristate
+# Defined at drivers/phy/canaan/Kconfig:5
+#   Prompt: Canaan USB2 PHY Driver
+#   Depends on: (ARCH_CANAAN [=y] || COMPILE_TEST [=n]) && OF [=y]
+#   Location:
+#     -> Device Drivers
+#       -> PHY Subsystem
+#         -> Canaan USB2 PHY Driver (PHY_CANAAN_USB [=n])
+# Selects: GENERIC_PHY [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 8787fa1da603 (phy: usb: Add driver for Canaan K230 USB 2.0 PHY)
+# CONFIG_PHY_CANAAN_USB is not set

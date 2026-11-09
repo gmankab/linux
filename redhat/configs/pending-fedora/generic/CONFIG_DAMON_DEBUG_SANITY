@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: DAMON_DEBUG_SANITY [=n]
+# Type  : bool
+# Defined at mm/damon/Kconfig:15
+#   Prompt: Check sanity of DAMON code
+#   Depends on: DAMON [=y]
+#   Location:
+#     -> Memory Management options
+#       -> Data Access Monitoring
+#         -> DAMON: Data Access Monitoring Framework (DAMON [=y])
+#           -> Check sanity of DAMON code (DAMON_DEBUG_SANITY [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 62f058287558 (mm/damon: add CONFIG_DAMON_DEBUG_SANITY)
+# CONFIG_DAMON_DEBUG_SANITY is not set

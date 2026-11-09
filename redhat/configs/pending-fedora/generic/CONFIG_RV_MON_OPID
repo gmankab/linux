@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: RV_MON_OPID [=y]
+# Type  : bool
+# Defined at kernel/trace/rv/monitors/opid/Kconfig:3
+#   Prompt: opid monitor
+#   Depends on: FTRACE [=y] && RV [=y] && RV_MON_SCHED [=y]
+#   Location:
+#     -> Kernel hacking
+#       -> Tracers (FTRACE [=y])
+#         -> Runtime Verification (RV [=y])
+#           -> sched monitor (RV_MON_SCHED [=y])
+#             -> opid monitor (RV_MON_OPID [=y])
+# Selects: HA_MON_EVENTS_IMPLICIT [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 614384533dfe (rv: Add opid per-cpu monitor)
+CONFIG_RV_MON_OPID=y

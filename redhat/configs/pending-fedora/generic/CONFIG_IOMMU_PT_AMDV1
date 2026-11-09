@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: IOMMU_PT_AMDV1 [=n]
+# Type  : tristate
+# Defined at drivers/iommu/generic_pt/Kconfig:35
+#   Prompt: IOMMU page table for 64-bit AMD IOMMU v1
+#   Depends on: GENERIC_PT [=y] && IOMMU_PT [=y] && !GENERIC_ATOMIC64 [=n]
+#   Location:
+#     -> Device Drivers
+#       -> Generic Radix Page Table (GENERIC_PT [=y])
+#         -> IOMMU Page Tables (IOMMU_PT [=y])
+#           -> IOMMU page table for 64-bit AMD IOMMU v1 (IOMMU_PT_AMDV1 [=n])
+# Selected by [n]:
+#   - AMD_IOMMU [=n] && IOMMU_SUPPORT [=y] && X86_64 && PCI [=y] && ACPI [=y] && HAVE_CMPXCHG_DOUBLE [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: 879ced2bab1b (iommupt: Add the AMD IOMMU v1 page table format)
+# CONFIG_IOMMU_PT_AMDV1 is not set

@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: PCIE_ESWIN [=n]
+# Type  : tristate
+# Defined at drivers/pci/controller/dwc/Kconfig:98
+#   Prompt: ESWIN PCIe controller
+#   Depends on: PCI [=y] && (ARCH_ESWIN [=y] || COMPILE_TEST [=n]) && PCI_MSI [=y]
+#   Location:
+#     -> Device Drivers
+#       -> PCI support (PCI [=y])
+#         -> PCI controller drivers
+#           -> DesignWare-based PCIe controllers
+#             -> ESWIN PCIe controller (PCIE_ESWIN [=n])
+# Selects: PCIE_DW_HOST [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: b593c26d081a (PCI: eswin: Add ESWIN PCIe Root Complex driver)
+# CONFIG_PCIE_ESWIN is not set

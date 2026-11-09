@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: HID_LENOVO_GO_S [=n]
+# Type  : tristate
+# Defined at drivers/hid/Kconfig:627
+#   Prompt: HID Driver for Lenovo Legion Go S Controller
+#   Depends on: HID_SUPPORT [=y] && HID [=y] && USB_HID [=y] && LEDS_CLASS_MULTICOLOR [=m]
+#   Location:
+#     -> Device Drivers
+#       -> HID bus support (HID_SUPPORT [=y])
+#         -> HID bus core support (HID [=y])
+#           -> Special HID drivers
+#             -> HID Driver for Lenovo Legion Go S Controller (HID_LENOVO_GO_S [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: a23f3497bf20 (HID: hid-lenovo-go-s: Add Lenovo Legion Go S Series HID Driver)
+# CONFIG_HID_LENOVO_GO_S is not set

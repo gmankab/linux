@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: POLARFIRE_SOC_IRQ_MUX [=y]
+# Type  : bool
+# Defined at drivers/soc/microchip/Kconfig:1
+#   Prompt: Microchip PolarFire SoC's GPIO IRQ Mux
+#   Depends on: ARCH_MICROCHIP [=y]
+#   Location:
+#     -> Device Drivers
+#       -> SOC (System On Chip) specific Drivers
+#         -> Microchip PolarFire SoC's GPIO IRQ Mux (POLARFIRE_SOC_IRQ_MUX [=y])
+# Selects: REGMAP [=y] && REGMAP_MMIO [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: bd34cdd6d214 (soc: microchip: add mpfs gpio interrupt mux driver)
+CONFIG_POLARFIRE_SOC_IRQ_MUX=y

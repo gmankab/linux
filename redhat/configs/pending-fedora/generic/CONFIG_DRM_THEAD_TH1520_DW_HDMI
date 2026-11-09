@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: DRM_THEAD_TH1520_DW_HDMI [=n]
+# Type  : tristate
+# Defined at drivers/gpu/drm/bridge/Kconfig:356
+#   Prompt: T-Head TH1520 DesignWare HDMI bridge
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && DRM_BRIDGE [=y] && OF [=y] && COMMON_CLK [=y] && (ARCH_THEAD [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> Display Interface Bridges
+#             -> T-Head TH1520 DesignWare HDMI bridge (DRM_THEAD_TH1520_DW_HDMI [=n])
+# Selects: DRM_DW_HDMI [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: 96f30ee0fb9d (drm/bridge: add a driver for T-Head TH1520 HDMI controller)
+# CONFIG_DRM_THEAD_TH1520_DW_HDMI is not set

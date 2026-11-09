@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: DRM_PANEL_NOVATEK_NT37700F [=n]
+# Type  : tristate
+# Defined at drivers/gpu/drm/panel/Kconfig:605
+#   Prompt: Novatek NT37700F DSI panel
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && DRM_PANEL [=y] && OF [=y] && DRM_MIPI_DSI [=y] && BACKLIGHT_CLASS_DEVICE [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> Display Panels
+#             -> Novatek NT37700F DSI panel (DRM_PANEL_NOVATEK_NT37700F [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 2db443036fe9 (drm/panel: Add Novatek/Tianma NT37700F panel)
+# CONFIG_DRM_PANEL_NOVATEK_NT37700F is not set

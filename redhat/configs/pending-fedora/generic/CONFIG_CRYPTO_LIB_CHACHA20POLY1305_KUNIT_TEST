@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: CRYPTO_LIB_CHACHA20POLY1305_KUNIT_TEST [=m]
+# Type  : tristate
+# Defined at lib/crypto/tests/Kconfig:30
+#   Prompt: KUnit tests for ChaCha20Poly1305
+#   Depends on: RUNTIME_TESTING_MENU [=y] && KUNIT [=m] && CRYPTO_LIB_CHACHA20POLY1305 [=y]
+#   Visible if: RUNTIME_TESTING_MENU [=y] && KUNIT [=m] && CRYPTO_LIB_CHACHA20POLY1305 [=y] && !KUNIT_ALL_TESTS [=m]
+#   Location:
+#     -> Kernel hacking
+#       -> Kernel Testing and Coverage
+#         -> Runtime Testing (RUNTIME_TESTING_MENU [=y])
+#           -> KUnit tests for ChaCha20Poly1305 (CRYPTO_LIB_CHACHA20POLY1305_KUNIT_TEST [=m])
+# Selects: CRYPTO_LIB_BENCHMARK_VISIBLE [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: d2a68aba8505 (lib/crypto: tests: Migrate ChaCha20Poly1305 self-test to KUnit)
+CONFIG_CRYPTO_LIB_CHACHA20POLY1305_KUNIT_TEST=m

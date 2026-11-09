@@ -1,0 +1,20 @@
+# ~~~
+# Symbol: CRYPTO_SM3 [=n]
+# Type  : tristate
+# Defined at crypto/Kconfig:963
+#   Prompt: SM3 (ShangMi 3)
+#   Depends on: CRYPTO [=y]
+#   Location:
+#     -> Cryptographic API (CRYPTO [=y])
+#       -> Hashes, digests, and MACs
+#         -> SM3 (ShangMi 3) (CRYPTO_SM3 [=n])
+# Selects: CRYPTO_HASH [=y] && CRYPTO_LIB_SM3 [=n]
+# Selected by [n]:
+#   - CRYPTO_DEV_CCREE [=n] && CRYPTO [=y] && CRYPTO_HW [=y] && OF [=n] && HAS_DMA [=y] && HAS_IOMEM [=y]
+#   - CRYPTO_DEV_JH7110 [=n] && CRYPTO [=y] && CRYPTO_HW [=y] && (SOC_STARFIVE && AMBA_PL08X [=n] || COMPILE_TEST [=n]) && HAS_DMA [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 6dc7fce91041 (crypto: sm3 - Rename CRYPTO_SM3_GENERIC to CRYPTO_SM3)
+# CONFIG_CRYPTO_SM3 is not set

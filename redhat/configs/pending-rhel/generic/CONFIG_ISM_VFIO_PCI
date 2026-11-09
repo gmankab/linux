@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: ISM_VFIO_PCI [=n]
+# Type  : tristate
+# Defined at drivers/vfio/pci/ism/Kconfig:2
+#   Prompt: VFIO support for ISM devices
+#   Depends on: VFIO [=m] && PCI [=y] && S390 [=y]
+#   Location:
+#     -> Device Drivers
+#       -> VFIO Non-Privileged userspace driver framework (VFIO [=m])
+#         -> VFIO support for PCI devices
+#           -> VFIO support for ISM devices (ISM_VFIO_PCI [=n])
+# Selects: VFIO_PCI_CORE [=m]
+# 
+# 
+# 
+# ~~~
+# Commit: bf4197be96d0 (vfio/ism: Implement vfio_pci driver for ISM devices)
+# CONFIG_ISM_VFIO_PCI is not set

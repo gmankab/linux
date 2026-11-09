@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: PINCTRL_IPQ5210 [=n]
+# Type  : tristate
+# Defined at drivers/pinctrl/qcom/Kconfig.msm:71
+#   Prompt: Qualcomm Technologies Inc IPQ5210 pin controller driver
+#   Depends on: PINCTRL [=y] && (ARCH_QCOM [=y] || COMPILE_TEST [=n]) && PINCTRL_MSM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Pin controllers (PINCTRL [=y])
+#         -> Qualcomm core pin controller driver (PINCTRL_MSM [=y])
+#           -> Qualcomm Technologies Inc IPQ5210 pin controller driver (PINCTRL_IPQ5210 [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: a549fe22376f (pinctrl: qcom: Introduce IPQ5210 TLMM driver)
+# CONFIG_PINCTRL_IPQ5210 is not set

@@ -1,0 +1,14 @@
+# ~~~
+# Symbol: ARCH_MICROCHIP [=n]
+# Type  : bool
+# Defined at arch/arm64/Kconfig.platforms:191
+#   Prompt: Microchip SoC support
+#   Location:
+#     -> Platform selection
+#       -> Microchip SoC support (ARCH_MICROCHIP [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: e4ffa98a02f4 (arm64: Kconfig: provide a top-level switch for Microchip platforms)
+# CONFIG_ARCH_MICROCHIP is not set

@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: DRM_PANEL_MOTOROLA_MOT [=n]
+# Type  : tristate
+# Defined at drivers/gpu/drm/panel/Kconfig:504
+#   Prompt: Atrix 4G and Droid X2 540x960 DSI video mode panel
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && DRM_PANEL [=y] && OF [=y] && DRM_MIPI_DSI [=y] && BACKLIGHT_CLASS_DEVICE [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> Display Panels
+#             -> Atrix 4G and Droid X2 540x960 DSI video mode panel (DRM_PANEL_MOTOROLA_MOT [=n])
+# Selects: VIDEOMODE_HELPERS [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: a187482243ca (gpu/drm: panel: add support for DSI panel used in Motorola Atrix 4G and Droid X2)
+# CONFIG_DRM_PANEL_MOTOROLA_MOT is not set

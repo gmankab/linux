@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: RESET_RZG2L_USBPHY_CTRL [=n]
+# Type  : tristate
+# Defined at drivers/reset/Kconfig:249
+#   Prompt: Renesas RZ/G2L USBPHY control driver
+#   Depends on: RESET_CONTROLLER [=y] && (ARCH_RZG2L [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Reset Controller Support (RESET_CONTROLLER [=y])
+#         -> Renesas RZ/G2L USBPHY control driver (RESET_RZG2L_USBPHY_CTRL [=n])
+# Selects: MFD_SYSCON [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: bee08559701f (reset: renesas: Add RZ/G2L usbphy control driver)
+# CONFIG_RESET_RZG2L_USBPHY_CTRL is not set

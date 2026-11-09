@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: SENSORS_YOGAFAN [=n]
+# Type  : tristate
+# Defined at drivers/hwmon/Kconfig:2665
+#   Prompt: Lenovo Yoga Fan Hardware Monitoring
+#   Depends on: ACPI [=y] && HWMON [=y] && DMI [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Hardware Monitoring support (HWMON [=y])
+#         -> Lenovo Yoga Fan Hardware Monitoring (SENSORS_YOGAFAN [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: c67c248ca406 (hwmon: (yogafan) Add support for Lenovo Yoga/Legion fan monitoring)
+# CONFIG_SENSORS_YOGAFAN is not set

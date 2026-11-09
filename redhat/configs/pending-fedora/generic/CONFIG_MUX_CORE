@@ -1,0 +1,15 @@
+# ~~~
+# Symbol: MUX_CORE [=n]
+# Type  : bool
+# Defined at drivers/mux/Kconfig:9
+#   Prompt: Generic Multiplexer Support
+#   Location:
+#     -> Device Drivers
+#       -> Generic Multiplexer Support (MUX_CORE [=n])
+# Selects: MULTIPLEXER [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: ce5c7c17e706 (mux: add visible config symbol to enable multiplexer subsystem)
+# CONFIG_MUX_CORE is not set

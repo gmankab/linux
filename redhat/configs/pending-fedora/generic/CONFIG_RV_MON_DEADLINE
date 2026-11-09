@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: RV_MON_DEADLINE [=n]
+# Type  : bool
+# Defined at kernel/trace/rv/monitors/deadline/Kconfig:1
+#   Prompt: deadline monitor
+#   Depends on: FTRACE [=y] && RV [=y]
+#   Location:
+#     -> Kernel hacking
+#       -> Tracers (FTRACE [=y])
+#         -> Runtime Verification (RV [=y])
+#           -> deadline monitor (RV_MON_DEADLINE [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: b133207deb72 (rv: Add nomiss deadline monitor)
+# CONFIG_RV_MON_DEADLINE is not set

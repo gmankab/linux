@@ -1,0 +1,21 @@
+# ~~~
+# Symbol: SND_SOC_CS35L56_CAL_PERFORM_CTRL [=n]
+# Type  : bool
+# Defined at sound/soc/codecs/Kconfig:924
+#   Prompt: CS35L56 ALSA control to perform factory calibration
+#   Depends on: SOUND [=m] && SND [=m] && SND_SOC [=m] && SND_SOC_CS35L56 [=m]
+#   Location:
+#     -> Device Drivers
+#       -> Sound card support (SOUND [=m])
+#         -> Advanced Linux Sound Architecture (SND [=m])
+#           -> ALSA for SoC audio support (SND_SOC [=m])
+#             -> CODEC drivers
+#               -> CS35L56 driver options
+#                 -> CS35L56 ALSA control to perform factory calibration (SND_SOC_CS35L56_CAL_PERFORM_CTRL [=n])
+# Selects: SND_SOC_CS35L56_CAL_DEBUGFS_COMMON [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: ee7d655dbaf5 (ASoC: cs35l56: Allow factory calibration through ALSA controls)
+# CONFIG_SND_SOC_CS35L56_CAL_PERFORM_CTRL is not set

@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: BATTERY_S2MU005 [=n]
+# Type  : tristate
+# Defined at drivers/power/supply/Kconfig:232
+#   Prompt: Samsung S2MU005 PMIC fuel gauge driver
+#   Depends on: POWER_SUPPLY [=y] && I2C [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Power supply class support (POWER_SUPPLY [=y])
+#         -> Samsung S2MU005 PMIC fuel gauge driver (BATTERY_S2MU005 [=n])
+# Selects: REGMAP_I2C [=m]
+# 
+# 
+# 
+# ~~~
+# Commit: aa2132799817 (power: supply: add support for S2MU005 battery fuel gauge device)
+# CONFIG_BATTERY_S2MU005 is not set

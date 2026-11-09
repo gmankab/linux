@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: SENSORS_LATTEPANDA_SIGMA_EC [=n]
+# Type  : tristate
+# Defined at drivers/hwmon/Kconfig:966
+#   Prompt: LattePanda Sigma EC hardware monitoring
+#   Depends on: HWMON [=y] && X86 [=y] && DMI [=y] && HAS_IOPORT [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Hardware Monitoring support (HWMON [=y])
+#         -> LattePanda Sigma EC hardware monitoring (SENSORS_LATTEPANDA_SIGMA_EC [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: a28b088ede9d (hwmon: Add LattePanda Sigma EC driver)
+# CONFIG_SENSORS_LATTEPANDA_SIGMA_EC is not set

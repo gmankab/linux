@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: DRM_RAS [=n]
+# Type  : bool
+# Defined at drivers/gpu/drm/Kconfig:133
+#   Prompt: DRM RAS support
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && NET [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> DRM RAS support (DRM_RAS [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: c36218dc49f5 (drm/ras: Introduce the DRM RAS infrastructure over generic netlink)
+# CONFIG_DRM_RAS is not set

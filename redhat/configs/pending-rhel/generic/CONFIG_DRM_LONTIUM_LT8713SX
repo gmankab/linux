@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: DRM_LONTIUM_LT8713SX [=n]
+# Type  : tristate
+# Defined at drivers/gpu/drm/bridge/Kconfig:194
+#   Prompt: Lontium LT8713SX DP MST bridge
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && DRM_BRIDGE [=y] && OF [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> Display Interface Bridges
+#             -> Lontium LT8713SX DP MST bridge (DRM_LONTIUM_LT8713SX [=n])
+# Selects: CRC8 [=m] && REGMAP_I2C [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 4037c6adc1f9 (drm/bridge: add support for lontium lt8713sx bridge driver)
+# CONFIG_DRM_LONTIUM_LT8713SX is not set

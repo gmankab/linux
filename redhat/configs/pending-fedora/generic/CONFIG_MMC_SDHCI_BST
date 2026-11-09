@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: MMC_SDHCI_BST [=n]
+# Type  : tristate
+# Defined at drivers/mmc/host/Kconfig:432
+#   Prompt: SDHCI support for Black Sesame Technologies BST C1200 controller
+#   Depends on: MMC [=m] && (ARCH_BST [=y] || COMPILE_TEST [=n]) && MMC_SDHCI_PLTFM [=m] && OF [=y]
+#   Location:
+#     -> Device Drivers
+#       -> MMC/SD/SDIO card support (MMC [=m])
+#         -> SDHCI support for Black Sesame Technologies BST C1200 controller (MMC_SDHCI_BST [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 695824f45629 (mmc: sdhci: add Black Sesame Technologies BST C1200 controller driver)
+# CONFIG_MMC_SDHCI_BST is not set

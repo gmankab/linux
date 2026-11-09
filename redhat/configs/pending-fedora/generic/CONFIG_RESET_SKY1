@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: RESET_SKY1 [=n]
+# Type  : bool
+# Defined at drivers/reset/Kconfig:296
+#   Prompt: Cix Sky1 reset controller
+#   Depends on: RESET_CONTROLLER [=y] && (ARCH_CIX [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Reset Controller Support (RESET_CONTROLLER [=y])
+#         -> Cix Sky1 reset controller (RESET_SKY1 [=n])
+# Selects: REGMAP_MMIO [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 7cd3ca90d921 (reset: add Sky1 soc reset support)
+# CONFIG_RESET_SKY1 is not set

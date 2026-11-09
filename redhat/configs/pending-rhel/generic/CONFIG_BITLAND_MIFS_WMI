@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: BITLAND_MIFS_WMI [=n]
+# Type  : tristate
+# Defined at drivers/platform/x86/Kconfig:116
+#   Prompt: Bitland MIFS (MiInterface) WMI driver
+#   Depends on: X86_PLATFORM_DEVICES [=y] && ACPI_WMI [=m] && HWMON [=y] && INPUT [=y] && POWER_SUPPLY [=y]
+#   Location:
+#     -> Device Drivers
+#       -> X86 Platform Specific Device Drivers (X86_PLATFORM_DEVICES [=y])
+#         -> Bitland MIFS (MiInterface) WMI driver (BITLAND_MIFS_WMI [=n])
+# Selects: ACPI_PLATFORM_PROFILE [=y] && INPUT_SPARSEKMAP [=m]
+# 
+# 
+# 
+# ~~~
+# Commit: dc1ec4fa86b2 (platform/x86: bitland-mifs-wmi: Add new Bitland MIFS WMI driver)
+# CONFIG_BITLAND_MIFS_WMI is not set

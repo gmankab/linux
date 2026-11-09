@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: COMMON_CLK_EIC7700 [=y]
+# Type  : tristate
+# Defined at drivers/clk/eswin/Kconfig:6
+#   Prompt: EIC7700 Clock Driver
+#   Depends on: COMMON_CLK [=y] && (ARCH_ESWIN [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Common Clock Framework (COMMON_CLK [=y])
+#         -> EIC7700 Clock Driver (COMMON_CLK_EIC7700 [=y])
+# Selects: COMMON_CLK_ESWIN [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: cd44f127c1d4 (clk: eswin: Add eic7700 clock driver)
+CONFIG_COMMON_CLK_EIC7700=y

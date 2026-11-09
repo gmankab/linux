@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: XOR_KUNIT_TEST [=m]
+# Type  : tristate
+# Defined at lib/raid/Kconfig:21
+#   Prompt: KUnit tests for xor_gen
+#   Depends on: KUNIT [=m] && XOR_BLOCKS [=y]
+#   Visible if: KUNIT [=m] && XOR_BLOCKS [=y] && !KUNIT_ALL_TESTS [=m]
+#   Location:
+#     -> Library routines
+#       -> KUnit tests for xor_gen (XOR_KUNIT_TEST [=m])
+# 
+# 
+# 
+# ~~~
+# Commit: af53e85ef797 (xor: add a kunit test case)
+CONFIG_XOR_KUNIT_TEST=m

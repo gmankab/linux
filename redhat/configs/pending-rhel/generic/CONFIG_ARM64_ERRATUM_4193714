@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: ARM64_ERRATUM_4193714 [=y]
+# Type  : bool
+# Defined at arch/arm64/Kconfig:1145
+#   Prompt: C1-Pro: 4193714: SME DVMSync early acknowledgement
+#   Depends on: ARM64_SME [=y]
+#   Location:
+#     -> Kernel Features
+#       -> ARM errata workarounds via the alternatives framework
+#         -> C1-Pro: 4193714: SME DVMSync early acknowledgement (ARM64_ERRATUM_4193714 [=y])
+# 
+# 
+# 
+# ~~~
+# Commit: 0baba94a9779 (arm64: errata: Work around early CME DVMSync acknowledgement)
+CONFIG_ARM64_ERRATUM_4193714=y

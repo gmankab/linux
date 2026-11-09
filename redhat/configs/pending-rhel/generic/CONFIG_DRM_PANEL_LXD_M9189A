@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: DRM_PANEL_LXD_M9189A [=n]
+# Type  : tristate
+# Defined at drivers/gpu/drm/panel/Kconfig:473
+#   Prompt: LXD M9189A MIPI-DSI LCD panel
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && DRM_PANEL [=y] && OF [=y] && DRM_MIPI_DSI [=y] && BACKLIGHT_CLASS_DEVICE [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> Display Panels
+#             -> LXD M9189A MIPI-DSI LCD panel (DRM_PANEL_LXD_M9189A [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 1f772de164e6 (drm/panel: add LXD M9189A panel driver)
+# CONFIG_DRM_PANEL_LXD_M9189A is not set

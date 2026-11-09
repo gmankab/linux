@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: QCOM_SPMI_ADC5_GEN3 [=n]
+# Type  : tristate
+# Defined at drivers/iio/adc/Kconfig:1376
+#   Prompt: Qualcomm Technologies Inc. SPMI PMIC5 GEN3 ADC
+#   Depends on: IIO [=m] && SPMI [=y] && THERMAL [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Industrial I/O support (IIO [=m])
+#         -> Analog to digital converters
+#           -> Qualcomm Technologies Inc. SPMI PMIC5 GEN3 ADC (QCOM_SPMI_ADC5_GEN3 [=n])
+# Selects: REGMAP_SPMI [=y] && QCOM_VADC_COMMON [=m] && AUXILIARY_BUS [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: baff45179e90 (iio: adc: Add support for QCOM PMIC5 Gen3 ADC)
+# CONFIG_QCOM_SPMI_ADC5_GEN3 is not set

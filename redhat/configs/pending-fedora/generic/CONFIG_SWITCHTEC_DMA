@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: SWITCHTEC_DMA [=n]
+# Type  : tristate
+# Defined at drivers/dma/Kconfig:590
+#   Prompt: Switchtec PSX/PFX Switch DMA Engine Support
+#   Depends on: DMADEVICES [=y] && PCI [=y]
+#   Location:
+#     -> Device Drivers
+#       -> DMA Engine support (DMADEVICES [=y])
+#         -> Switchtec PSX/PFX Switch DMA Engine Support (SWITCHTEC_DMA [=n])
+# Selects: DMA_ENGINE [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: d9587042b50f (dmaengine: switchtec-dma: Introduce Switchtec DMA engine skeleton)
+# CONFIG_SWITCHTEC_DMA is not set

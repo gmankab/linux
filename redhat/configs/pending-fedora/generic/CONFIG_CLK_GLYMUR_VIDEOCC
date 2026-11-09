@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: CLK_GLYMUR_VIDEOCC [=n]
+# Type  : tristate
+# Defined at drivers/clk/qcom/Kconfig:84
+#   Prompt: Glymur Video Clock Controller
+#   Depends on: COMMON_CLK [=y] && COMMON_CLK_QCOM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Common Clock Framework (COMMON_CLK [=y])
+#         -> Support for Qualcomm's clock controllers (COMMON_CLK_QCOM [=y])
+#           -> Glymur Video Clock Controller (CLK_GLYMUR_VIDEOCC [=n])
+# Selects: CLK_GLYMUR_GCC [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: e2e0d2f3dab4 (clk: qcom: videocc-glymur: Add video clock controller driver for Glymur)
+# CONFIG_CLK_GLYMUR_VIDEOCC is not set

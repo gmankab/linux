@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: DRM_PANEL_ILITEK_ILI9806E_DSI [=n]
+# Type  : tristate
+# Defined at drivers/gpu/drm/panel/Kconfig:274
+#   Prompt: Ilitek ILI9806E-based DSI panels
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && DRM_PANEL [=y] && OF [=y] && DRM_MIPI_DSI [=y] && BACKLIGHT_CLASS_DEVICE [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> Display Panels
+#             -> Ilitek ILI9806E-based DSI panels (DRM_PANEL_ILITEK_ILI9806E_DSI [=n])
+# Selects: DRM_PANEL_ILITEK_ILI9806E_CORE [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: 3bdd847ac227 (drm/panel: ilitek-ili9806e: rename to specific DSI driver)
+# CONFIG_DRM_PANEL_ILITEK_ILI9806E_DSI is not set

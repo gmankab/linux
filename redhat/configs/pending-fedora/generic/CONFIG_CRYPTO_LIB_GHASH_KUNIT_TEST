@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: CRYPTO_LIB_GHASH_KUNIT_TEST [=m]
+# Type  : tristate
+# Defined at lib/crypto/tests/Kconfig:47
+#   Prompt: KUnit tests for GHASH
+#   Depends on: RUNTIME_TESTING_MENU [=y] && KUNIT [=m] && CRYPTO_LIB_GF128HASH [=y]
+#   Visible if: RUNTIME_TESTING_MENU [=y] && KUNIT [=m] && CRYPTO_LIB_GF128HASH [=y] && !KUNIT_ALL_TESTS [=m]
+#   Location:
+#     -> Kernel hacking
+#       -> Kernel Testing and Coverage
+#         -> Runtime Testing (RUNTIME_TESTING_MENU [=y])
+#           -> KUnit tests for GHASH (CRYPTO_LIB_GHASH_KUNIT_TEST [=m])
+# Selects: CRYPTO_LIB_BENCHMARK_VISIBLE [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 75e34bef5325 (lib/crypto: tests: Add KUnit tests for GHASH)
+CONFIG_CRYPTO_LIB_GHASH_KUNIT_TEST=m

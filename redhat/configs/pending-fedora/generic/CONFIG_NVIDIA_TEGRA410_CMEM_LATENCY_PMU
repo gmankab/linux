@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: NVIDIA_TEGRA410_CMEM_LATENCY_PMU [=n]
+# Type  : tristate
+# Defined at drivers/perf/Kconfig:314
+#   Prompt: NVIDIA Tegra410 CPU Memory Latency PMU
+#   Depends on: PERF_EVENTS [=y] && ARM64 [=y] && ACPI [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Performance monitor support
+#         -> NVIDIA Tegra410 CPU Memory Latency PMU (NVIDIA_TEGRA410_CMEM_LATENCY_PMU [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 429b7638b2df (perf: add NVIDIA Tegra410 CPU Memory Latency PMU)
+# CONFIG_NVIDIA_TEGRA410_CMEM_LATENCY_PMU is not set

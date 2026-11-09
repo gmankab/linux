@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: RZ_MTU3 [=n]
+# Type  : tristate
+# Defined at drivers/mfd/Kconfig:1554
+#   Prompt: Renesas RZ/G2L MTU3a core driver
+#   Depends on: HAS_IOMEM [=y] && (ARCH_RZG2L [=y] && OF [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Multifunction device drivers
+#         -> Renesas RZ/G2L MTU3a core driver (RZ_MTU3 [=n])
+# Selects: MFD_CORE [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 654c293e1687 (mfd: Add Renesas RZ/G2L MTU3a core driver)
+# CONFIG_RZ_MTU3 is not set

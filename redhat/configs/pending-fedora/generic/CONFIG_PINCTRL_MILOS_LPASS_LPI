@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: PINCTRL_MILOS_LPASS_LPI [=n]
+# Type  : tristate
+# Defined at drivers/pinctrl/qcom/Kconfig:63
+#   Prompt: Qualcomm Technologies Inc Milos LPASS LPI pin controller driver
+#   Depends on: PINCTRL [=y] && (ARCH_QCOM [=y] || COMPILE_TEST [=n]) && (ARM64 [=y] || COMPILE_TEST [=n]) && PINCTRL_LPASS_LPI [=m]
+#   Location:
+#     -> Device Drivers
+#       -> Pin controllers (PINCTRL [=y])
+#         -> Qualcomm Technologies Inc LPASS LPI pin controller driver (PINCTRL_LPASS_LPI [=m])
+#           -> Qualcomm Technologies Inc Milos LPASS LPI pin controller driver (PINCTRL_MILOS_LPASS_LPI [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: ca0395d9ef29 (pinctrl: qcom: Add Milos LPASS LPI TLMM)
+# CONFIG_PINCTRL_MILOS_LPASS_LPI is not set

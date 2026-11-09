@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: ARCH_TEGRA_238_SOC [=y]
+# Type  : bool
+# Defined at drivers/soc/tegra/Kconfig:137
+#   Prompt: NVIDIA Tegra238 SoC
+#   Depends on: ARCH_TEGRA [=y] && ARM64 [=y] && !CPU_BIG_ENDIAN [=n]
+#   Location:
+#     -> Device Drivers
+#       -> SOC (System On Chip) specific Drivers
+#         -> NVIDIA Tegra238 SoC (ARCH_TEGRA_238_SOC [=y])
+# Selects: MAILBOX [=y] && SOC_TEGRA_PMC [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 9514d3f2dd4b (soc/tegra: Add Tegra238 Kconfig symbol)
+CONFIG_ARCH_TEGRA_238_SOC=y

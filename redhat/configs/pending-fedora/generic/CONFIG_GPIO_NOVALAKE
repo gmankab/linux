@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: GPIO_NOVALAKE [=n]
+# Type  : tristate
+# Defined at drivers/gpio/Kconfig:1060
+#   Prompt: Intel Nova Lake GPIO-signaled ACPI events support
+#   Depends on: GPIOLIB [=y] && X86 [=y] && HAS_IOPORT [=y] && (X86 [=y] || COMPILE_TEST [=n]) && ACPI [=y]
+#   Location:
+#     -> Device Drivers
+#       -> GPIO Support (GPIOLIB [=y])
+#         -> Port-mapped I/O GPIO drivers
+#           -> Intel Nova Lake GPIO-signaled ACPI events support (GPIO_NOVALAKE [=n])
+# Selects: GPIOLIB_IRQCHIP [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 15cbd66b69a9 (gpio: Add Intel Nova Lake ACPI GPIO events driver)
+# CONFIG_GPIO_NOVALAKE is not set

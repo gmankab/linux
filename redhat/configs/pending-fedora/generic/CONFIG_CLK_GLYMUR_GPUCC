@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: CLK_GLYMUR_GPUCC [=n]
+# Type  : tristate
+# Defined at drivers/clk/qcom/Kconfig:67
+#   Prompt: GLYMUR Graphics Clock Controller
+#   Depends on: COMMON_CLK [=y] && COMMON_CLK_QCOM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Common Clock Framework (COMMON_CLK [=y])
+#         -> Support for Qualcomm's clock controllers (COMMON_CLK_QCOM [=y])
+#           -> GLYMUR Graphics Clock Controller (CLK_GLYMUR_GPUCC [=n])
+# Selects: CLK_GLYMUR_GCC [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 67e645285dd0 (clk: qcom: Add support for GPUCC and GXCLK for Glymur)
+# CONFIG_CLK_GLYMUR_GPUCC is not set

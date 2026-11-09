@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: X86_AMD_PSTATE_DYNAMIC_EPP [=n]
+# Type  : bool
+# Defined at drivers/cpufreq/Kconfig.x86:73
+#   Prompt: AMD Processor P-State dynamic EPP support
+#   Depends on: CPU_FREQ [=y] && X86 [=y] && X86_AMD_PSTATE [=y]
+#   Location:
+#     -> Power management and ACPI options
+#       -> CPU Frequency scaling
+#         -> CPU Frequency scaling (CPU_FREQ [=y])
+#           -> AMD Processor P-State driver (X86_AMD_PSTATE [=y])
+#             -> AMD Processor P-State dynamic EPP support (X86_AMD_PSTATE_DYNAMIC_EPP [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: e30ca6dd5345 (cpufreq/amd-pstate: Add dynamic energy performance preference)
+# CONFIG_X86_AMD_PSTATE_DYNAMIC_EPP is not set

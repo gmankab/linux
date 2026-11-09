@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: CLK_ELIZA_DISPCC [=n]
+# Type  : tristate
+# Defined at drivers/clk/qcom/Kconfig:22
+#   Prompt: Eliza Display Clock Controller
+#   Depends on: COMMON_CLK [=y] && COMMON_CLK_QCOM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Common Clock Framework (COMMON_CLK [=y])
+#         -> Support for Qualcomm's clock controllers (COMMON_CLK_QCOM [=y])
+#           -> Eliza Display Clock Controller (CLK_ELIZA_DISPCC [=n])
+# Selects: CLK_ELIZA_GCC [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: 0e66f10942b5 (clk: qcom: dispcc-eliza: Add Eliza display clock controller support)
+# CONFIG_CLK_ELIZA_DISPCC is not set

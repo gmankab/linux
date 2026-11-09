@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: DRM_VERISILICON_DC [=n]
+# Type  : tristate
+# Defined at drivers/gpu/drm/verisilicon/Kconfig:2
+#   Prompt: DRM Support for Verisilicon DC-series display controllers
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && COMMON_CLK [=y] && (RISCV [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> DRM Support for Verisilicon DC-series display controllers (DRM_VERISILICON_DC [=n])
+# Selects: DRM_BRIDGE_CONNECTOR [=y] && DRM_CLIENT_SELECTION [=y] && DRM_DISPLAY_HELPER [=m] && DRM_GEM_DMA_HELPER [=m] && DRM_KMS_HELPER [=y] && REGMAP_MMIO [=y] && VIDEOMODE_HELPERS [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: dbf21777caa8 (drm: verisilicon: add a driver for Verisilicon display controllers)
+# CONFIG_DRM_VERISILICON_DC is not set

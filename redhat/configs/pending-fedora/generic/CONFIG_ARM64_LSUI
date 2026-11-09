@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: ARM64_LSUI [=y]
+# Type  : bool
+# Defined at arch/arm64/Kconfig:2193
+#   Prompt: Support Unprivileged Load Store Instructions (LSUI)
+#   Depends on: AS_HAS_LSUI [=y] && !CPU_BIG_ENDIAN [=n]
+#   Location:
+#     -> Kernel Features
+#       -> ARMv9.6 architectural features
+#         -> Support Unprivileged Load Store Instructions (LSUI) (ARM64_LSUI [=y])
+# 
+# 
+# 
+# ~~~
+# Commit: 377609ae8b6a (arm64: Kconfig: Add support for LSUI)
+CONFIG_ARM64_LSUI=y

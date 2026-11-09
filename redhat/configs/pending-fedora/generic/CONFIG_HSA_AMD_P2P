@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: HSA_AMD_P2P [=n]
+# Type  : bool
+# Defined at drivers/gpu/drm/amd/amdkfd/Kconfig:28
+#   Prompt: HSA kernel driver support for peer-to-peer for AMD GPU devices
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && HSA_AMD [=y] && PCI_P2PDMA [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> AMD GPU (DRM_AMDGPU [=m])
+#             -> HSA kernel driver for AMD GPU devices (HSA_AMD [=y])
+#               -> HSA kernel driver support for peer-to-peer for AMD GPU devices (HSA_AMD_P2P [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 6fbfc3a23c98 (drm/amdkfd: Define config HSA_AMD_P2P to support peer-to-peer)
+# CONFIG_HSA_AMD_P2P is not set

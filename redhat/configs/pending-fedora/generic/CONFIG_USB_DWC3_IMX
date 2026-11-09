@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: USB_DWC3_IMX [=m]
+# Type  : tristate
+# Defined at drivers/usb/dwc3/Kconfig:153
+#   Prompt: NXP iMX Platform
+#   Depends on: USB_SUPPORT [=y] && USB_DWC3 [=m] && OF [=y] && COMMON_CLK [=y] && (ARCH_MXC [=y] && ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> USB support (USB_SUPPORT [=y])
+#         -> DesignWare USB3 DRD Core Support (USB_DWC3 [=m])
+#           -> NXP iMX Platform (USB_DWC3_IMX [=m])
+# 
+# 
+# 
+# ~~~
+# Commit: 76fc9452a6bf (usb: dwc3: introduce flatten model driver of i.MX Soc)
+CONFIG_USB_DWC3_IMX=m

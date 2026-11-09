@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: VIDEO_T4KA3 [=n]
+# Type  : tristate
+# Defined at drivers/media/i2c/Kconfig:806
+#   Prompt: Toshiba T4KA3 sensor support
+#   Depends on: MEDIA_SUPPORT [=m] && VIDEO_DEV [=m] && VIDEO_CAMERA_SENSOR [=y] && (ACPI [=y] || COMPILE_TEST [=n]) && GPIOLIB [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Multimedia support (MEDIA_SUPPORT [=m])
+#         -> Media ancillary drivers
+#           -> Camera sensor devices (VIDEO_CAMERA_SENSOR [=y])
+#             -> Toshiba T4KA3 sensor support (VIDEO_T4KA3 [=n])
+# Selects: V4L2_CCI_I2C [=m]
+# 
+# 
+# 
+# ~~~
+# Commit: fd5531969215 (media: Add t4ka3 camera sensor driver)
+# CONFIG_VIDEO_T4KA3 is not set

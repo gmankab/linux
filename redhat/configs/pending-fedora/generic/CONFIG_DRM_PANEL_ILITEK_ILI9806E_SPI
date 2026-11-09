@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: DRM_PANEL_ILITEK_ILI9806E_SPI [=n]
+# Type  : tristate
+# Defined at drivers/gpu/drm/panel/Kconfig:284
+#   Prompt: Ilitek ILI9806E-based RGB SPI panel
+#   Depends on: HAS_IOMEM [=y] && DRM [=y] && DRM_PANEL [=y] && OF [=y] && SPI [=y] && BACKLIGHT_CLASS_DEVICE [=y]
+#   Location:
+#     -> Device Drivers
+#       -> Graphics support
+#         -> Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) (DRM [=y])
+#           -> Display Panels
+#             -> Ilitek ILI9806E-based RGB SPI panel (DRM_PANEL_ILITEK_ILI9806E_SPI [=n])
+# Selects: DRM_MIPI_DBI [=m] && VIDEOMODE_HELPERS [=y] && DRM_PANEL_ILITEK_ILI9806E_CORE [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: a05f291175f2 (drm/panel: ilitek-ili9806e: add Rocktech RK050HR345-CT106A SPI panel)
+# CONFIG_DRM_PANEL_ILITEK_ILI9806E_SPI is not set

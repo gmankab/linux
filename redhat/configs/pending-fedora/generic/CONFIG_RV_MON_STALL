@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: RV_MON_STALL [=n]
+# Type  : bool
+# Defined at kernel/trace/rv/monitors/stall/Kconfig:3
+#   Prompt: stall monitor
+#   Depends on: FTRACE [=y] && RV [=y]
+#   Location:
+#     -> Kernel hacking
+#       -> Tracers (FTRACE [=y])
+#         -> Runtime Verification (RV [=y])
+#           -> stall monitor (RV_MON_STALL [=n])
+# Selects: HA_MON_EVENTS_ID [=n]
+# 
+# 
+# 
+# ~~~
+# Commit: 13578a087152 (rv: Add sample hybrid monitor stall)
+# CONFIG_RV_MON_STALL is not set

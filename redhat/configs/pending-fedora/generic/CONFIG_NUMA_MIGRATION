@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: NUMA_MIGRATION [=y]
+# Type  : bool
+# Defined at mm/Kconfig:631
+#   Prompt: NUMA page migration
+#   Depends on: NUMA [=y] && MMU [=y]
+#   Location:
+#     -> Memory Management options
+#       -> NUMA page migration (NUMA_MIGRATION [=y])
+# Selects: MIGRATION [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: 6ebf98d71f9b (mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION)
+CONFIG_NUMA_MIGRATION=y

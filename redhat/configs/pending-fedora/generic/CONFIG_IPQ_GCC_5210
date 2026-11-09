@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: IPQ_GCC_5210 [=n]
+# Type  : tristate
+# Defined at drivers/clk/qcom/Kconfig:371
+#   Prompt: IPQ5210 Global Clock Controller
+#   Depends on: COMMON_CLK [=y] && COMMON_CLK_QCOM [=y] && (ARM64 [=y] || COMPILE_TEST [=n])
+#   Location:
+#     -> Device Drivers
+#       -> Common Clock Framework (COMMON_CLK [=y])
+#         -> Support for Qualcomm's clock controllers (COMMON_CLK_QCOM [=y])
+#           -> IPQ5210 Global Clock Controller (IPQ_GCC_5210 [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 844be6e24afd (clk: qcom: add Global Clock controller (GCC) driver for IPQ5210 SoC)
+# CONFIG_IPQ_GCC_5210 is not set

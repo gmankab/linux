@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: TEST_WORKQUEUE [=n]
+# Type  : tristate
+# Defined at lib/Kconfig.debug:2639
+#   Prompt: Test module for stress/performance analysis of workqueue
+#   Depends on: RUNTIME_TESTING_MENU [=y]
+#   Location:
+#     -> Kernel hacking
+#       -> Kernel Testing and Coverage
+#         -> Runtime Testing (RUNTIME_TESTING_MENU [=y])
+#           -> Test module for stress/performance analysis of workqueue (TEST_WORKQUEUE [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 24b2e73f9700 (workqueue: add test_workqueue benchmark module)
+# CONFIG_TEST_WORKQUEUE is not set

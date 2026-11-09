@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: NVME_AUTH_KUNIT_TEST [=m]
+# Type  : tristate
+# Defined at drivers/nvme/common/Kconfig:15
+#   Prompt: KUnit tests for NVMe authentication
+#   Depends on: KUNIT [=m] && NVME_AUTH [=m]
+#   Visible if: KUNIT [=m] && NVME_AUTH [=m] && !KUNIT_ALL_TESTS [=m]
+#   Location:
+#     -> Device Drivers
+#       -> NVME Support
+#         -> KUnit tests for NVMe authentication (NVME_AUTH_KUNIT_TEST [=m])
+# 
+# 
+# 
+# ~~~
+# Commit: f990ad67f0fe (nvme-auth: common: add KUnit tests for TLS key derivation)
+CONFIG_NVME_AUTH_KUNIT_TEST=m

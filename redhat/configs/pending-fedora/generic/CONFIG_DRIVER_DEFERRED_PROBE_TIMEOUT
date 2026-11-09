@@ -1,0 +1,15 @@
+# ~~~
+# Symbol: DRIVER_DEFERRED_PROBE_TIMEOUT [=10]
+# Type  : integer
+# Defined at drivers/base/Kconfig:76
+#   Prompt: Default value for deferred_probe_timeout
+#   Location:
+#     -> Device Drivers
+#       -> Generic Driver Options
+#         -> Default value for deferred_probe_timeout (DRIVER_DEFERRED_PROBE_TIMEOUT [=10])
+# 
+# 
+# 
+# ~~~
+# Commit: 56e3ee721b33 (driver core: Make deferred_probe_timeout default a Kconfig option)
+CONFIG_DRIVER_DEFERRED_PROBE_TIMEOUT=10

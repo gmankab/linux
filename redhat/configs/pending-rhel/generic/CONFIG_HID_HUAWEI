@@ -1,0 +1,18 @@
+# ~~~
+# Symbol: HID_HUAWEI [=n]
+# Type  : tristate
+# Defined at drivers/hid/Kconfig:1448
+#   Prompt: Huawei HID devices support
+#   Depends on: HID_SUPPORT [=y] && HID [=y] && USB_HID [=y]
+#   Location:
+#     -> Device Drivers
+#       -> HID bus support (HID_SUPPORT [=y])
+#         -> HID bus core support (HID [=y])
+#           -> Special HID drivers
+#             -> Huawei HID devices support (HID_HUAWEI [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: e93faaca84b7 (HID: huawei: fix CD30 keyboard report descriptor issue)
+# CONFIG_HID_HUAWEI is not set

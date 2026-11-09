@@ -1,0 +1,16 @@
+# ~~~
+# Symbol: CRC_ENABLE_ALL_FOR_KUNIT [=n]
+# Type  : tristate
+# Defined at lib/crc/Kconfig:111
+#   Prompt: Enable all CRC functions for KUnit test
+#   Depends on: KUNIT [=m]
+#   Location:
+#     -> Library routines
+#       -> Enable all CRC functions for KUnit test (CRC_ENABLE_ALL_FOR_KUNIT [=n])
+# Selects: CRC7 [=m] && CRC16 [=y] && CRC_T10DIF [=y] && CRC32 [=y] && CRC64 [=y]
+# 
+# 
+# 
+# ~~~
+# Commit: cdf22aeaad84 (lib/crc: tests: Add CRC_ENABLE_ALL_FOR_KUNIT)
+# CONFIG_CRC_ENABLE_ALL_FOR_KUNIT is not set

@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: SENSORS_XDP720 [=n]
+# Type  : tristate
+# Defined at drivers/hwmon/pmbus/Kconfig:714
+#   Prompt: Infineon XDP720 family
+#   Depends on: HWMON [=y] && PMBUS [=m]
+#   Location:
+#     -> Device Drivers
+#       -> Hardware Monitoring support (HWMON [=y])
+#         -> PMBus support (PMBUS [=m])
+#           -> Infineon XDP720 family (SENSORS_XDP720 [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: a0c370a6fd96 (hwmon:(pmbus/xdp720) Add support for efuse xdp720)
+# CONFIG_SENSORS_XDP720 is not set

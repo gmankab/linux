@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: PINCTRL_SDM670_LPASS_LPI [=n]
+# Type  : tristate
+# Defined at drivers/pinctrl/qcom/Kconfig:102
+#   Prompt: Qualcomm Technologies Inc SDM670 LPASS LPI pin controller driver
+#   Depends on: PINCTRL [=y] && (ARCH_QCOM [=y] || COMPILE_TEST [=n]) && GPIOLIB [=y] && (ARM64 [=y] || COMPILE_TEST [=n]) && PINCTRL_LPASS_LPI [=m]
+#   Location:
+#     -> Device Drivers
+#       -> Pin controllers (PINCTRL [=y])
+#         -> Qualcomm Technologies Inc LPASS LPI pin controller driver (PINCTRL_LPASS_LPI [=m])
+#           -> Qualcomm Technologies Inc SDM670 LPASS LPI pin controller driver (PINCTRL_SDM670_LPASS_LPI [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: 9826035a75da (pinctrl: qcom: add sdm670 lpi tlmm)
+# CONFIG_PINCTRL_SDM670_LPASS_LPI is not set

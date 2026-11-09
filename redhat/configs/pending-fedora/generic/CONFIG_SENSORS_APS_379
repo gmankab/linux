@@ -1,0 +1,17 @@
+# ~~~
+# Symbol: SENSORS_APS_379 [=n]
+# Type  : tristate
+# Defined at drivers/hwmon/pmbus/Kconfig:80
+#   Prompt: Sony APS-379 Power Supplies
+#   Depends on: HWMON [=y] && PMBUS [=m]
+#   Location:
+#     -> Device Drivers
+#       -> Hardware Monitoring support (HWMON [=y])
+#         -> PMBus support (PMBUS [=m])
+#           -> Sony APS-379 Power Supplies (SENSORS_APS_379 [=n])
+# 
+# 
+# 
+# ~~~
+# Commit: a2981c20ad67 (hwmon: pmbus: Add support for Sony APS-379)
+# CONFIG_SENSORS_APS_379 is not set

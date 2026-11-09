@@ -1,0 +1,19 @@
+# ~~~
+# Symbol: IOMMU_PT_VTDSS [=n]
+# Type  : tristate
+# Defined at drivers/iommu/generic_pt/Kconfig:45
+#   Prompt: IOMMU page table for Intel VT-d Second Stage
+#   Depends on: GENERIC_PT [=y] && IOMMU_PT [=y] && !GENERIC_ATOMIC64 [=n]
+#   Location:
+#     -> Device Drivers
+#       -> Generic Radix Page Table (GENERIC_PT [=y])
+#         -> IOMMU Page Tables (IOMMU_PT [=y])
+#           -> IOMMU page table for Intel VT-d Second Stage (IOMMU_PT_VTDSS [=n])
+# Selected by [n]:
+#   - INTEL_IOMMU [=n] && IOMMU_SUPPORT [=y] && PCI_MSI [=y] && ACPI [=y] && X86
+# 
+# 
+# 
+# ~~~
+# Commit: 5448c1558f60 (iommupt: Add the Intel VT-d second stage page table format)
+# CONFIG_IOMMU_PT_VTDSS is not set

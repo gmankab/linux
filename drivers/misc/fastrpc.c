@@ -2428,7 +2428,7 @@ static int fastrpc_rpmsg_probe(struct rpmsg_device *rpdev)
 			err = qcom_scm_assign_mem(res.start, resource_size(&res), &src_perms,
 				    data->vmperms, data->vmcount);
 			if (err)
-				goto err_free_data;
+				dev_warn(rdev, "assign memory to SDSP failed: %d\n", err);
 		}
 
 	}

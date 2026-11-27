@@ -1219,3 +1219,7 @@
                 boost-enable-gpios = <&tlmm 47 GPIO_ACTIVE_HIGH>;
         };
 };
+
+&ice {
+  status = "disabled";
+};
